@@ -1,13 +1,13 @@
-type PostCardProps = {
+type Props = {
   title: string;
-  body: string;
+  date: string;
 };
 
-export default function PostCard({ title, body }: PostCardProps) {
+export default function PostCard({ title, date }: Props) {
   return (
-    <div className="border rounded p-4 mb-4 shadow">
-      <h2 className="text-xl font-semibold">{title}</h2>
-      <p className="text-gray-700">{body}</p>
+    <div className="border rounded-xl p-4 hover:shadow-md transition">
+      <h2 className="text-xl font-bold">{title}</h2>
+      <p className="text-sm text-gray-500">{date}</p>
     </div>
   );
 }
