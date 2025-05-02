@@ -1,6 +1,10 @@
 ---
-title: "My First Blog Post"
-date: "2024-04-28"
+title: "My First Post"
+date: "2025-04-25"
+tags: ["nextjs", "blog"]
+description: "This is a test post"
 ---
 
-Welcome to my blog! This is my first post.
+# Hello World
+
+This is my **first post** in markdown!
