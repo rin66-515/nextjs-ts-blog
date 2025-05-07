@@ -13,11 +13,14 @@ type Post = {
 export default function Home({ posts }: { posts: Post[] }) {
   return (
     <main className="max-w-2xl mx-auto mt-10 space-y-6">
-      {posts.map((post) => (
-        <Link href={`/posts/${post.id}`} key={post.id}>
-          <PostCard title={post.title} date={post.date} />
-        </Link>
-      ))}
+      {posts
+        .slice() // 复制一份，避免直接修改原数组
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // 按日期倒序
+        .map((post) => (
+          <Link href={`/posts/${post.id}`} key={post.id}>
+            <PostCard title={post.title} date={post.date} />
+          </Link>
+        ))}
     </main>
   );
 }
