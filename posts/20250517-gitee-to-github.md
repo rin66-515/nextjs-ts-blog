@@ -1,8 +1,8 @@
 ---
-title: "データベースチューニング入門"
-date: "2025-05-07"
-tags: ["database", "performance", "PostgreSQL", "チューニング"]
-description: "データベースのパフォーマンスを最適化するための基本戦略と実践例について解説します。"
+title: "gitee-to-github"
+date: "2025-05-17"
+tags: ["git", "bash", "automatic"]
+description: "昔のgitee倉庫をgithubリポジトリに移り替え"
 ---
 
 #!/bin/bash
