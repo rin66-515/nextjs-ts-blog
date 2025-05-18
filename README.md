@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## スクリプト機能について
+
+このJavaプログラムは、指定したソースフォルダ内に日付（`yyyy-MM-dd`）ごとに作成されたサブフォルダから、`.md`形式の技術文書を自動的に検出し、プロジェクトの指定された投稿フォルダ（`posts`）へコピーします。
+
+- コピー時は差分更新を行い、既存ファイルより新しいものだけを上書きします。
+- 未来の日付のフォルダは処理対象外となります。
+- 実行ログは`copy_md_log.txt`に追記され、処理状況を記録します。
+- タスクスケジューラやバッチファイルで定期実行が可能で、日々の技術文書管理を自動化できます。
