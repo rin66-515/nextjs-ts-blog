@@ -5,10 +5,10 @@ tags: ["SQL", "in", "join", "having"]
 description: "特定の列が同じレコードを抽出し、並び替えるSQL"
 ---
 
-**日本語**：
+
  あるテーブルにおいて、特定の列（例：name, emailなど）の値が**同じレコードを抽出**し、別の列（例：作成日時など）で**並び替える**。
 
-**English**：
+
  In a table, we want to **find rows that share the same values on specific columns**, and then **sort them** by another field (e.g., timestamp, count).
 
 参考１：
